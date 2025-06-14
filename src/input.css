@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@theme {}
+/* HTML element styles (like resets, typography, etc.) */
+@layer base {
+  /* Add base styles (like typography, HTML/body resets) here if needed */
+  /* base styles like body, headings, p, etc. */
+}
+@layer components {
+  /* custom component classes go here */
+  /* reusable class components like .btn, .card, .grid-box */
+}
+/* For small, reusable utility classes */
+@layer utilities {
+  /* Add custom utility classes here if needed */
+  /* mini-utilities like .text-shadow, .scrollbar-hide, .text-gradient */
+  /* .bg-linear-login {
+    animation: move-bg 8s ease infinite; */
+    /* background-size: 400% 400%; */
+    /* background-image: linear-gradient(-45deg, #ee7752, #e73c7e,#ffffff, #23a6d5, #23d5ab);
+    #9e2de4,#4a00e0,#ff6a00,#ee0979
+  } */
+}
+
+/* ✅ Outside of @layer */
+@keyframes move-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* CSS rules for screens ≤ 460px go here */
+  .box-img img{
+    display:none;
+  }
+  .box-input{
+    min-width:320px;
+  }
+}
